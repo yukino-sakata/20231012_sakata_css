@@ -1,18 +1,19 @@
 .header {
     display: flex;
-    position: relative;
+    position: fixed;
+    margin: 15px;
+    width: 100%;
 }
 
 .title {
-    display: inline-block;
-    padding: 20px 30px;
+    padding: 0px 20px;
     font-size: 2vmax;
     color: navy;
 }
 
 .header__navi {
-    display: inline-flex;
-    margin: 0 0 0 auto;
+    display: inline;
+    margin: 5px 0 0 auto;
     color: navy;
     font-weight: bold;
     font-size: 1.2vmax;
@@ -20,40 +21,39 @@
 
 .header__navi--list {
     display: flex;
-    padding: 20px 30px;
+    padding: 0 30px;
 }
 
 .header__navi--item {
-    padding: 10px;
+    padding: 0 10px;
 }
 
 .image {
-    position: relative;
+    margin: 0 0 0 auto;
     width: 50vw;
-    height: 400px;
-    margin: 80px 0 0 auto;
-    z-index: 10;
 }
 
 .image img {
+    position: relative;
+    z-index: 10;
+    top: 100px;
     width: 100%;
     height: 100%;
 }
 
-.concept-box {
+.concept-box{
     position: absolute;
-    top: 400px;
-    width: 100%;
-    height: 150px;
-    z-index: 0;
+    width: 50vw;
+    background-color: yellow;
 }
 
 .concept {
-    font-size: 5vmax;
+    color: navy;
+    font-size: 5vw;
 }
 
 .box {
+    width: 80vw;
+    height: 150px;
     background-color: navy;
-    width: 80%;
-    height: 100%;
 }
